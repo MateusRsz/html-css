@@ -1,0 +1,4 @@
+
+
+$array = login;
+$var = 
