@@ -4,4 +4,4 @@
 Estou aprendendo a criar a sites e agora irei aprender a gerenciar repositorios
 
 site do projeto de ensino 
-<a href="https://mateusrsz.github.io/HTML-CSS/exercicios/Projeto/android.html">Como surgiu o bugdroid</a>
+<a href="https://mateusrsz.github.io/html-css/exercicios/Projeto/android.html">Como surgiu o bugdroid</a>
