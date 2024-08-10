@@ -33,7 +33,7 @@ header > h1{
     font-family: 'Passion one';
     font-size: 3.7em;
     margin: auto;
-    width: 433px;
+    width: 393px;
     padding-top:40px ;
     position: relative;
     
@@ -67,7 +67,7 @@ article > p{
     padding: 50px;
     padding-top: 40px;
     padding-bottom: 140px;
-    padding: 0%;
+    padding: 5%;
 
      
 }
