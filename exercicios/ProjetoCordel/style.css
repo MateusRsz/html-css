@@ -4,142 +4,63 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-  
+
 *{
     text-decoration: none;
     color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
+} 
+:root{
+    --font1:'Passion One';
+    --font2: 'Sriracha';
 }
-strong{
+body, html{
+    min-height: 100vh;
+}
+.cor1{
     color: white;
 }
- .cor1{
-    color: white;
- }
-
+div > p{
+    font-family: var(--font2);
+}
+.p1{
+    font-family: var(--font2);
+}
+a{
+font-weight: bolder;
+color: white;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
 header{
     background-color: black;
-    color: white;
-    width: 100%;
-    min-width: 90%;
-    height: 200px;
-    position: relative;
-    padding: 20px;
 }
-
-header > h1{    
-    
-    font-family: 'Passion one';
-    font-size: 50px;
-    margin: auto;
-    
-    padding-top:40px ;
-    position: relative;
-    
+header > h1{
+    font-family: var(--font1);
+    font-variant: small-caps;
+    padding-top: 40px;
+    text-align: center;
     
 }
 header > p{
-    font-size: 1.2em;
-    width:  150px;
-    margin: auto;
-    margin-left: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-330%, 0%);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
-header > p > a:hover{
-    text-decoration: underline;
+header > h1{
+    font-size: 5em;
 }
-
-
-article{
-     
-    min-width: 72%;
-    font-size: 1.5vh;
-}
-article > p{
-    font-family: 'Sriracha';
-   
-    width: 70%;
-    font-size: 3.4em;
-    padding-bottom: 70px; /*ANOTAÇÃOOOOOOOOOOOOOOO*/
-    padding: 50px;
-    padding-top: 40px;
-    padding-bottom: 140px;
-   
-
-     
-}
-
 footer{
     background-color: black;
-    height: 39px;
+
 }
 footer > p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin: auto;
-    padding-top: 14px;
-    padding: 1px;
-    width: 50%;
-    padding-bottom: 0px;
-}
- 
-footer > p > a:hover{
-     text-decoration: underline;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
     
-}
 
-div#flor{
-    background: black url('imagens/background001.jpg')  right center no-repeat fixed;
-    background-size: cover;
-    
-    box-shadow: inset 1px 0px 20px 1px black; 
-    padding: 50px;
-    position: relative;
-    font-size: 2.4em;
-    padding-left: 0%;
-    max-width: 90%;
-    min-width: 90%;
-    height: 540px;
-}
-
-div#flor > p{
-    font-family: 'Sriracha';
-    
-     
-    background-color: rgba(0, 0, 0, 0.397);  
-    position: absolute;
-    top: 90px;
-
-    
-    padding: 10px;
-    min-width: 350px;
-
-
-}
-
-
-div#caderninho{
-    background: black url('imagens/background002.jpg') center center no-repeat fixed;
-    background-size: cover;
-    max-width: 100%;
-    min-width: 90%;
-    height: 540px;
-    box-shadow: inset 1px 0px 20px 1px black; 
-    padding: 50px;
-    position: relative;
-    padding-left: 0%;
-}
-
-div#caderninho > p{
-    font-family: 'Sriracha';
-    
-    font-size: 2.4em;
-    background-color: rgba(0, 0, 0, 0.397);  
-    position: absolute;
-    top: 90px;
-    padding: 10px;
-    min-width: 350px;
 }
