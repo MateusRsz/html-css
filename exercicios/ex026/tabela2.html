@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+
+        }
+        table{
+         border-collapse: collapse;   
+         font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: #EAECF0;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            width: 100px;
+            position: relative;
+            height: 40px;
+            text-align: center;
+            
+        }
+        img{
+            position: absolute;
+            bottom: 10%;
+            left: 25%;
+        }
+        .uf:hover{
+            text-decoration: underline;
+        }
+        tfoot{
+            background-color: black;
+        }
+        td:nth-child(4), td:nth-child(5){
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+         <thead>
+            
+                <th>Bandeira 
+                <th>Unidade federativa 
+                <th>Sede de governo 
+                <th>Área (Km<sup>2</sup>) 
+                <th>População 
+        </thead>
+            <tbody>
+                <tr><!--linhas -->
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/45px-Bandeira_do_Acre.svg.png">
+                    
+                    <td class="uf"><a href="https://pt.wikipedia.org/wiki/Acre">Acre</a>
+                          
+                    <td>Rio Branco 
+                        
+                    <td>164 122,2
+                    
+                    <td>830 018
+                </tr>
+
+                <tr>
+                    <td><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/45px-Bandeira_de_Alagoas.svg.png">
+                    </td>
+                    <td>Alagoas</td>
+                    <td>Maceió</td>
+                    <td>27 767,7</td>
+                    <td>3 127 683</td>
+                </tr>
+                
+            </tbody>
+        <tfoot>
+        
+        <td>        
+        <td>
+        <td>
+        <td>
+        <td>
+         </tfoot>
+    </table>
+</body>
+</html>
