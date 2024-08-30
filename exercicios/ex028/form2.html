@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
 </head>
 <body>
-    
+    <h1>teste de Formularios</h1>
+    <form action="cada.php" method="post" autocomplete="on">
+        <p>
+        <label for="iusu">Usuario: </label>
+        <input type="text" name="usu" id="iusu" required minlength="6" maxlength="15" size="15" autocomplete="username">
+        </p>
+
+
+
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="10" size="8" autocomplete="current-password">
+        </p>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
 </body>
 </html>
