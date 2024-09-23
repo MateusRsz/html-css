@@ -12,3 +12,15 @@ html{
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: 'este artigo foi impresso dia: tal/tal/tal';
+    
+}
+article{
+    width: 100%;
+}
