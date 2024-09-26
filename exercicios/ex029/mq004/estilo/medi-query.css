@@ -2,6 +2,79 @@
 
 /* todas demais medias*/
 
+
+
+/*Typical Device Breaking points
+
+Telas muito pequenas: maximo 600px (celulares muito pequeno)
+
+telas pequenas: minimo 600px (celulares normais)
+
+telas medias: minimo 768px (tablets, ipads)
+
+telas largas: minimo:992px (desktops)
+
+telas ultra largas: minimo 1200px (Televisões)
+
+26/09/2024
+
+*/
+
 @media print{
+    img#phone{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    main{
+        border: 2px solid black;
+    }
+
+    main, h1{
+        color: black;
+    }
+
+    body::after{
+        content: "Site feito pelo mateus";
+    }
     
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
 }
