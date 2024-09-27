@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body, html{
+            background-color: #D3D3D3;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #949494;
+
+
+        }
+
+        header h1 {
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 25px;
+
+        }
+
+
+
+        menu {
+             display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        li {
+            border-top: 2px solid #949494;
+            background-color: #575757;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: #7e7e7e;
+        }
+
+
+
+        i#burguer {
+            color: white;
+            background-color: #303030;
+            width: 100vw;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            
+        }
+
+        i#burguer:hover {
+            color: black;
+            background-color: white;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px;
+            padding: 16px 20px 16px 7px;
+            margin: 0px 15px 0px 15px;
+
+        }
+
+        main h2 {
+            padding: 5px 0px 20px 5px;
+        }
+
+        p {
+            text-indent: 39px;
+            text-align: justify;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a>
+                <li><a href="#">Opção 2</a>
+                <li><a href="#">Opção 3</a>
+                <li><a href="#">Opção 4</a>
+                <li><a href="#">Opção 5</a>
+
+            </ul>
+        </menu>
+    </header>
+    <br>
+    <main>
+        <h2><strong>Testando Medias Queries</strong></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora ea quibusdam aliquid in impedit, modi
+            quas culpa optio iusto numquam similique! Cupiditate accusamus eius quibusdam sapiente, tempora suscipit
+            earum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus esse facere ratione voluptatum,
+            autem illo et aperiam nihil nostrum. Iste?</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est fugit obcaecati blanditiis harum delectus
+            temporibus? Nemo magnam veniam illum, ipsum dolorum facere commodi voluptas et facilis, culpa aspernatur
+            praesentium sint fugit hic omnis sequi earum sit voluptatum officia perspiciatis mollitia Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Facilis ex maxime officiis ipsam fugiat quo in, iusto veniam
+            obcaecati doloribus. </p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, incidunt. Dolor natus, ducimus dolore
+            voluptatem sint ullam commodi magnam illo veniam, ea soluta, adipisci velit! Facilis et quia ipsum sunt
+            adipisci dolore quas quis reprehenderit provident itaque mollitia, alias accusantium? Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Deserunt commodi atque eveniet eos, nam alias dolor quam tempora soluta,
+            ea earum aliquid expedita fugit quisquam beatae rerum? Enim, a. Velit. </p>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+        }else{
+            itens.style.display = 'block'
+        }
+        }
+    </script>
+</body>
+
+</html>

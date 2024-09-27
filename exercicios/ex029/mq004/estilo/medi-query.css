@@ -62,6 +62,9 @@ telas ultra largas: minimo 1200px (Televisões)
     img#phone{
         display: none;
     }
+    img#tablet{
+        display: none;
+    }
     img#pc{
         display: block;
     }
