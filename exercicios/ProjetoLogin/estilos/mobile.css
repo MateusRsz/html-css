@@ -16,7 +16,7 @@ html {
 body {
     background-color: #5F2C82;
     position: relative;
-     
+    
 }
 
 main {
@@ -30,6 +30,8 @@ main {
     background-position: top left;
     border-radius: 19px;
     box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.459);
+    transition: width 0.3s, height 0.3s;
+    -o-transition-timing-function: ease;
 }
 
 section {
@@ -39,6 +41,7 @@ section {
     background-color: white;
     padding: 12px;
     border-radius: 0px 0px 19px 19px;
+    transition: width 0.5s, height 0.5s;
 }
 
 section h1{
@@ -102,6 +105,10 @@ a:hover{
 input#envia:hover{
     background-color: #2D6462;
      
+}
+
+input#iemail:focus-within, input#isenha:focus-within{
+    background-color: white;
 }
 
  
