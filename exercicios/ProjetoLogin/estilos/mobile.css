@@ -64,8 +64,9 @@ input#iemail, input#isenha{
     margin-bottom: 2px;
     margin-left: 0px;
     border: none;
-    
-    transform: translateY(-40%); 
+    transform: translateY(-14px); 
+
+    width: 167px;
 }
 
 input#envia{
@@ -92,4 +93,12 @@ a{
     text-align: center;
     text-decoration: none;
 }
- 
+
+a:hover{
+    background-color: #6CD3CF;
+}
+
+input#envia:hover{
+    background-color: #2D6462;
+     
+}
