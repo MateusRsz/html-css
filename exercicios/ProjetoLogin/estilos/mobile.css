@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: #5F2C82;
+    position: relative;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    background-image: url(../imagens/pexels-alejandro-robles-duque-420889274-22730280.jpg);
+    background-position: top left;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.459);
+}
+
+section {
+    position: relative;
+    top: 30%;
+    height: 327px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 0px 0px 19px 19px;
+}
+
+section h1{
+    text-align: center;
+    padding: 5px;
+}
+
+section p{
+    font-size: 0.8em;
+    padding: 5px 2px 4px 2px;
+}
+div#campoem, div#campose{
+    background-color: #5F2C82;
+    width: 102%;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    height: 42px;
+}
+
+input#iemail, input#isenha{
+    background-color: #94CFCD;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    border: none;
+    transform: translateY(-40%); 
+}
+
+input#envia{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 4px;
+    border: none;
+    color: white;
+    background-color: #53AAA7;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+ 
+a{
+    display: inline-block;
+    width: 90%;
+    padding: 11px;
+    border: none;
+    color: #3e807d;
+    border: 1px solid #53AAA7;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    text-decoration: none;
+}
+ 
