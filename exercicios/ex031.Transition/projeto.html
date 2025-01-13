@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .conteiner {
+            width: 174px;
+            height: 130px;
+            border-radius: 5px;
+            margin: auto;
+            transform: translate(0px, 70%);
+            border: 3px solid gray;
+        }
+
+        .linhas {
+            background-color: gray;
+            width: 70%;
+            height: 2px;
+            margin: 30px 30px 20px 30px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        #top {
+            transform-origin: left;
+            transition: transform 0.2s;
+
+        }
+
+        #meio {
+            transition: opacity 0.50ms;
+        }
+
+
+
+        #bottom {
+            transform-origin: left;
+            transition: transform 0.2s;
+        }
+
+        #pa {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            transform: translate(0, 15vw);
+            background-color: rgb(205, 138, 50);
+            display: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner" onclick="menu()">
+        <div class="linhas" id="top"></div>
+        <div class="linhas" id='meio'></div>
+        <div class="linhas" id="bottom"></div>
+    </div>
+    <p id="pa">Olá, Mundo!</p>
+
+
+    <script>
+
+        function menu() {
+            let p = document.querySelector('p#pa')
+            let top = document.getElementById('top')
+            let meio = document.getElementById('meio')
+            let bottom = document.getElementById('bottom')
+
+            if (p.style.display == 'block') {
+                p.style.display = 'none'
+                 
+                top.style.transform = 'rotate(0deg) '
+                meio.style.opacity = "100%"
+                bottom.style.transform = 'rotate(0deg)'
+            } else {
+                p.style.display = 'block'
+                top.style.transform = 'rotate(33deg) '
+                meio.style.opacity = "0%"
+                bottom.style.transform = 'rotate(-33deg)'
+                
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

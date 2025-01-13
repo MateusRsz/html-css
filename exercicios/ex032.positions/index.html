@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posições</title>
+    <style>
+        
+        body {
+            width: 100vw;
+            height: 300vh;
+
+        }
+
+        .relative {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 3px solid green;
+        }
+
+        .absolute {
+            position: absolute;
+            border: 3px solid red;
+            width: 150px;
+            height: 100px;
+            left: 30px;
+            top: 30px;
+        }
+
+        .absolutesempai {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            border: 3px solid rgb(184, 46, 46);
+            right: 0;
+            top: 0;
+        }
+
+        .fixed {
+            position: fixed;
+            width: 200px;
+            height: 150px;
+            border: 3px solid orange;
+            left: 20%;
+            transform: translate(-50%);
+        }
+        .sticky{
+            position: sticky;
+            width: 300px;
+            height: 200px;
+            border: 3px solid blue;
+            margin: auto;
+            top: 0;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="relative">
+        Relative
+        <div class="absolute">top:30px;<br>
+            left:30px;<br>absolute</div>
+    </div>
+    <div class="absolutesempai">top:0;<br>right:0;
+        <br>absolute sem ancestral (pai)
+    </div>
+    <div class="fixed">left:20%;<br>
+        fixed
+    </div>
+    
+    <div class="sticky">top:0;<br>sticky</div>
+</body>
+
+</html>

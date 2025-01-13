@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.com, .sem{
+    width: 200px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom:15px;
+    background-color: brown;
+    transform: translate(0px, 30vw);
+}
+.com {
+    /* transition-property: padding, background-color, border-radius;   
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    transition: padding 1s ease 0s, background-color 1s ease 0s, border-radius 1s ease 0s;
+}
+.com:hover {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 103px;
+}
+.sem:hover {
+    background-color: blue;
+    padding: 20px;
+    border-radius: 103px;
+}
+
+@media (prefers-reduce-motion: reduce){
+    .com{
+        transition: none;
+    }
+}

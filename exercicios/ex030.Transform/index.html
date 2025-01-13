@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforma</title>
+    <style>
+
+        body{
+            width: 96vw;
+            height: 95vh;
+            position: relative;
+        }
+        div{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            transform: translate(0, 100%);
+            /*translate x e y shorthand*/
+        } 
+        #transfo2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        /*difrença de position e transfor: transform é relativo á ele mesmo, e o position é relativo ao elemento pai*/
+    </style>
+</head>
+<body>
+    <div id="transfo"></div>
+    <div id="transfo2"></div>
+      
+</body>
+</html>
